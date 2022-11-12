@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* .body {
+    background-color: #cccccc;
+} */
+
+.back-color {
+    background-color: white;
+    /* width: 60%;
+    margin: auto; */
+}
+.view_jobs{
+    color: #000 !important;
+}
+.view_jobs:hover{
+    color: #973BE8 !important;
+}
+
+/* span {
+    font-style: italic;
+    font-weight: bold;
+} */
+
+.para {
+    font-weight: bold;
+}
+
+.line {
+    border-width: 1px;
+    border-color: black;
+
+}
+/* .template_wrapper{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px 0px, rgba(0, 0, 0, 0.19) 0px 2px 12px 0px;
+} */
+
+@media only screen and (min-width: 720px) {
+    
+    .template_wrapper{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 720px){
+    
+    .template_wrapper{
+        width: 100% !important;
+    }
+}

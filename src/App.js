@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useState, useEffect } from "react";
+import "./App.css";
+import { AppContext } from "./context/AppContext";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  Col,
+  Container,
+  Row,
+} from "reactstrap";
+import PersonalDetails from "./Components/Forms/PersonalDetails";
+import EducationDetails from "./Components/Forms/EducationDetails";
+import Experience from "./Components/Forms/Experience";
+import Skills from "./Components/Forms/Skills";
+import Languages from "./Components/Forms/Languages";
+import Miscleanous from "./Components/Forms/Miscleanous";
+import { Routes, Route, Link } from "react-router-dom";
+import JobListing from "./Components/JobListing";
+import HomePage from "./Components/Forms/HomePage";
+import Template1 from "./Components/Templates/Template1";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="mt-5">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/view-resume" element={<Template1 />} />
+        <Route path="/view-jobs" element={<JobListing />} />
+      </Routes>
+    </Container>
   );
 }
 
